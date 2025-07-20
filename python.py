@@ -1,5 +1,28 @@
 import random as rd
 import time
+import xgboost as xgb
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import warnings
+warnings.filterwarnings("ignore")
+import os
+import sys
+import json
+import requests
+import datetime
+import math
+import re
+import string
+import nltk
+from nltk.corpus import stopwords
+nltk.download('stopwords')
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+# This is a simple number guessing game where the user has to guess a number between 1 and 100.
 
 def start_game():
     print("""welcome to the game
